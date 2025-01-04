@@ -1,0 +1,16 @@
+name: quick-sort
+
+services:
+  python:
+    build:
+      context: ./python
+      dockerfile: Dockerfile
+    ports:
+      - 8081:8000
+
+  go:
+    build:
+      context: ./go
+      dockerfile: Dockerfile
+    ports:
+      - 8082:8082
